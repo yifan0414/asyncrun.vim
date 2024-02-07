@@ -34,6 +34,7 @@ function! asyncrun#runner#floaterm#run(opts)
 	endif
 	let cmd = 'FloatermNew '
 	let cmd .= ' --wintype=float'
+	let cmd .= ' --title=OUTPUT'
 	if has_key(a:opts, 'position')
 		let cmd .= ' --position=' . fnameescape(a:opts.position)
 	endif
